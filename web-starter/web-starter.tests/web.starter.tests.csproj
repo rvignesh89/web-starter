@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\web-starter\web-starter.csproj">
+    <ProjectReference Include="..\web-starter\web.starter.csproj">
       <Project>{2F0C1E3B-A505-4FCE-8829-BC2CFDB58DC5}</Project>
-      <Name>web-starter</Name>
+      <Name>web.starter</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

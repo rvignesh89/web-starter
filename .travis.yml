@@ -1,2 +1,2 @@
 language: csharp
-solution: web-starter\web-starter.sln
+solution: .\web-starter\web-starter.sln

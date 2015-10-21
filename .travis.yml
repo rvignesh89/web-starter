@@ -1,8 +1,8 @@
 language: csharp
-solution: ./web-starter/web-starter.sln
+solution: ./web-starter/web.starter.sln
 install:
-  - nuget restore ./web-starter/web-starter.sln
+  - nuget restore ./web-starter/web.starter.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release ./web-starter/web-starter.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./web-starter/web-starter.tests/bin/Debug/web-starter.tests.dll
+  - xbuild /p:Configuration=Release ./web-starter/web.starter.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./web-starter/web.starter.tests/bin/Debug/web.starter.tests.dll

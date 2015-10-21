@@ -1,0 +1,7 @@
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\web-starter.tests.dll
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\web-starter.tests.pdb
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\nunit.framework.dll
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\nunit.framework.xml
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\obj\Debug\web-starter.tests.csprojResolveAssemblyReference.cache
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\obj\Debug\web-starter.tests.dll
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\obj\Debug\web-starter.tests.pdb

@@ -8,3 +8,4 @@ script:
   - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./web-starter/web-starter.tests/bin/Debug/web.starter.tests.dll
 after_success:
   - nuget pack ./web-starter/web-starter/web.starter.csproj -includereferencedprojects
+  - nuget push web.starter.*.nupkg -apikey acdfb084-d5c8-4459-8d11-ad13b08b30d8

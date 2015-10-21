@@ -5,3 +5,7 @@ C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\nunit.
 C:\personal-workspace\web-starter\web-starter\web-starter.tests\obj\Debug\web-starter.tests.csprojResolveAssemblyReference.cache
 C:\personal-workspace\web-starter\web-starter\web-starter.tests\obj\Debug\web-starter.tests.dll
 C:\personal-workspace\web-starter\web-starter\web-starter.tests\obj\Debug\web-starter.tests.pdb
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\Moq.dll
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\web-starter.dll
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\web-starter.pdb
+C:\personal-workspace\web-starter\web-starter\web-starter.tests\bin\Debug\Moq.xml

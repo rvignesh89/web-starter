@@ -1,2 +1,2 @@
 # web-starter
-[![Build Status](https://travis-ci.org/rvignesh89/web-starter.svg)](https://travis-ci.org/rvignesh89/web-starter)
+[![Build status](https://ci.appveyor.com/api/projects/status/dxgvityvevq8es8d?svg=true)](https://ci.appveyor.com/project/rvignesh89/web-starter)

@@ -1,3 +1,8 @@
 *.dll
 *.pdb
 packages/*
+bin/*
+obj/*
+web.starter/bin/*
+web.starter.tests/bin/*
+web.starter/obj/*

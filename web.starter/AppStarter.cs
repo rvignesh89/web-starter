@@ -1,14 +1,31 @@
 ﻿using System.Collections.Generic;
+using log4net;
 
 namespace web_starter
 {
     public class AppStarter
     {
-        public List<IStartable> Instance { get; set; }
+        private readonly ILog _Log;
+        private readonly List<IStartable> _Instance;
 
-        public AppStarter()
+        public AppStarter(ILog log)
         {
-            Instance = new List<IStartable>();
+            _Log = log;
+            _Instance = new List<IStartable>();
+        }
+
+        public void StartAll()
+        {
+            _Instance.ForEach(x =>
+            {
+                if(!x.Start())
+                    _Log.ErrorFormat("Subscriber {0} failed to start",x.GetName());
+            });
+        }
+
+        public void RegisterWith(IStartable startable)
+        {
+            _Instance.Add(startable);
         }
     }
 }

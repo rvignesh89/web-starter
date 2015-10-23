@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.starter", "web-starter\web.starter.csproj", "{2F0C1E3B-A505-4FCE-8829-BC2CFDB58DC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.starter", "web.starter\web.starter.csproj", "{2F0C1E3B-A505-4FCE-8829-BC2CFDB58DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.starter.tests", "web-starter.tests\web.starter.tests.csproj", "{0C7885A4-DDDE-4D7F-8681-31C2AC71224D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.starter.tests", "web.starter.tests\web.starter.tests.csproj", "{0C7885A4-DDDE-4D7F-8681-31C2AC71224D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

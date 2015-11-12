@@ -12,6 +12,4 @@ C:\personal-workspace\web-starter\web.starter\bin\Debug\web.starter.dll
 C:\personal-workspace\web-starter\web.starter\bin\Debug\web.starter.pdb
 C:\personal-workspace\web-starter\web.starter\obj\Debug\web.starter.dll
 C:\personal-workspace\web-starter\web.starter\obj\Debug\web.starter.pdb
-C:\personal-workspace\web-starter\web.starter\bin\Debug\log4net.dll
-C:\personal-workspace\web-starter\web.starter\bin\Debug\log4net.xml
 C:\personal-workspace\web-starter\web.starter\obj\Debug\web.starter.csprojResolveAssemblyReference.cache

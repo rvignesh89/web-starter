@@ -1,16 +1,14 @@
-﻿using System.Collections.Generic;
-using log4net;
+﻿using System;
+using System.Collections.Generic;
 
 namespace web_starter
 {
     public class AppStarter
     {
-        private readonly ILog _Log;
         private readonly List<IStartable> _Instance;
 
-        public AppStarter(ILog log)
+        public AppStarter()
         {
-            _Log = log;
             _Instance = new List<IStartable>();
         }
 
@@ -18,8 +16,14 @@ namespace web_starter
         {
             _Instance.ForEach(x =>
             {
-                if(!x.Start())
-                    _Log.ErrorFormat("Subscriber {0} failed to start",x.GetName());
+                try
+                {
+                    x.Start();
+                }
+                catch (Exception)
+                {
+                    x.OnException();
+                }
             });
         }
 

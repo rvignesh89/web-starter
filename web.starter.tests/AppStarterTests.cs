@@ -1,4 +1,5 @@
-﻿using log4net;
+﻿using System;
+using log4net;
 using Moq;
 using NUnit.Framework;
 
@@ -11,7 +12,6 @@ namespace web_starter.tests
         private Mock<IStartable> _Subscriber2;
         private Mock<IStartable> _FailingSubscriber;
         private AppStarter _AppStarter;
-        private Mock<ILog> _Logger;
 
         [Test]
         public void Test_StartAll_Calls_SubscribedInstance()
@@ -35,31 +35,28 @@ namespace web_starter.tests
         }
 
         [Test]
-        public void Test_StartAll_LogsTheInfo_IfAnySubscriberReturnsFalse()
+        public void Test_StartAll_CallsSubscribersOnExceptionIfAnyExceptionIsThrown()
         {
             _AppStarter.RegisterWith(_FailingSubscriber.Object);
 
             _AppStarter.StartAll();
 
-            _Logger.Verify(log => log.ErrorFormat("Subscriber {0} failed to start", "Test"), Times.Once());
+            _FailingSubscriber.Verify(x=>x.OnException(),Times.Once);
         }
 
         [SetUp]
         public void Setup()
         {
-            _Logger = new Mock<ILog>();
-            _Logger.Setup(log => log.ErrorFormat(It.IsAny<string>(), It.IsAny<string>())).Verifiable();
-
-            _AppStarter = new AppStarter(_Logger.Object);
+            _AppStarter = new AppStarter();
 
             _Subscriber = new Mock<IStartable>();
-            _Subscriber.Setup(x => x.Start()).Returns(true);
+            _Subscriber.Setup(x => x.Start());
 
             _Subscriber2 = new Mock<IStartable>();
-            _Subscriber2.Setup(x => x.Start()).Returns(true);
+            _Subscriber2.Setup(x => x.Start());
 
             _FailingSubscriber = new Mock<IStartable>();
-            _FailingSubscriber.Setup(x => x.Start()).Returns(false);
+            _FailingSubscriber.Setup(x => x.Start()).Throws<ArgumentNullException>();
             _FailingSubscriber.Setup(x => x.GetName()).Returns("Test");
         }
     }

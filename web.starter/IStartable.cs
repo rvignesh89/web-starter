@@ -2,7 +2,8 @@ namespace web_starter
 {
     public interface IStartable
     {
-        bool Start();
+        void Start();
+        void OnException();
         string GetName();
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using log4net;
 using Moq;
 using NUnit.Framework;
 

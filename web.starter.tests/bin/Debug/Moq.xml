@@ -2419,7 +2419,7 @@
 				// that expectation was not marked as verifiable.
 				this.VerifyAll();
 			</code>
-		</example><exception cref="T:Moq.MockException">At least one expectation was not met.</exception>		
+		</example><exception cref="T:Moq.MockException">At least one expectation was not met.</exception>        
         </member>
         <member name="M:Moq.Mock.GetInterceptor(System.Linq.Expressions.Expression,Moq.Mock)">
             <summary>
@@ -3163,12 +3163,6 @@
             Resets the calls previously made on the specified mock.
             </summary>
             <param name="mock">The mock whose calls need to be reset.</param>
-        </member>
-        <member name="M:Moq.MockExtensions.Reset(Moq.Mock)">
-            <summary>
-            Resets mock state, including setups and any previously made calls.
-            </summary>
-            <param name="mock">The mock that needs to be reset.</param>
         </member>
         <member name="T:Moq.MockSequence">
             <summary>

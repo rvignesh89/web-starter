@@ -1,5 +1,6 @@
 # web-starter
 [![Build status](https://ci.appveyor.com/api/projects/status/dxgvityvevq8es8d?svg=true)](https://ci.appveyor.com/project/rvignesh89/web-starter)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rvignesh89/web-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Description
 web.starter is a library which can be used to hook in application startup behaviour in a clean way without polluting the global.asax file. The library itself is a simple implementation of the [Observer Design Pattern](https://sourcemaking.com/design_patterns/observer).

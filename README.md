@@ -1,4 +1,6 @@
 # web-starter
+
+[![Join the chat at https://gitter.im/rvignesh89/web-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rvignesh89/web-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build status](https://ci.appveyor.com/api/projects/status/dxgvityvevq8es8d?svg=true)](https://ci.appveyor.com/project/rvignesh89/web-starter)
 
 ## Description
